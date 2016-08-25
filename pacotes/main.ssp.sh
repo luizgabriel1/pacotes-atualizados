@@ -66,6 +66,8 @@ echo "Configurando o repositorio do AdminDCOMP ao Pacman"
 cd dcomp-cfg/
 sudo pacman -U *.tar.xz --needed --noconfirm
 cd ..
+sudo pacman -Syy --needed --noconfirm
+sudo pacman -S ambiente-php ldap-client-config login-unico-dcomp sanity --needed --noconfirm
 echo "Repositorio configurado."
 
 echo "Programas principais instalados."
