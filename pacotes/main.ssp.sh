@@ -69,6 +69,6 @@ cd ..
 echo "Repositorio configurado."
 
 #sudo pacman -Syy --needed --noconfirm
-#sudo pacman -S ambiente-php ldap-client-config login-unico-dcomp sanity --needed --noconfirm
+sudo pacman -S openldap ldap-client-config nss-pam-ldapd --needed --noconfirm
 
 echo "Programas principais instalados."
