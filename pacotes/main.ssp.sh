@@ -68,7 +68,7 @@ sudo pacman -U *.tar.xz --needed --noconfirm
 cd ..
 echo "Repositorio configurado."
 
-pacman -Sy openldap ldap-client-config nss-pam-ldapd --needed --noconfirm
+pacman -Sy openldap ldap-client-config nss-pam-ldapd bluej --needed --noconfirm
 #sudo pacman -Syy --needed --noconfirm
 #sudo pacman -S ambiente-php ldap-client-config login-unico-dcomp sanity --needed --noconfirm
 
