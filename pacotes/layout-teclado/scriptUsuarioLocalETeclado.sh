@@ -8,7 +8,6 @@ userdel -r prodap
 echo -e "Criando arquivos de configuração do teclado.\n"
 # cp environment /etc
 echo -e "LANG=pt_BR.utf8\n" > /etc/environment
-# cp 20-keyboard.conf /etc/X11/xorg.conf.d/
-echo -e "Section \"InputClass\" \n        Identifier \"keyboard\"\n        MatchIsKeyboard \"yes\"\n        Option \"XkbLayout\" \"br\"\n        Option \"XkbVariant\" \"abnt2\"
-\nEndSection" > /etc/X11/xorg.conf.d/20-keyboard.conf
+cp 20-keyboard.conf /etc/X11/xorg.conf.d/
+#echo -e "Section \"InputClass\" \n        Identifier \"keyboard\"\n        MatchIsKeyboard \"yes\"\n        Option \"XkbLayout\" \"br\"\n        Option \"XkbVariant\" \"abnt2\"\nEndSection" > /etc/X11/xorg.conf.d/20-keyboard.conf
 echo -e "Pronto.\n"
